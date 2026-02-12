@@ -1,0 +1,7 @@
+{
+  "name": "Ellegance Noivas - Praia Grande",
+  "description": "Um site de luxo e sofisticação para noivas em Praia Grande, SP. Apresentando vestidos exclusivos, atendimento personalizado e agendamentos facilitados.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
