@@ -25,11 +25,11 @@
             colors: {
               brand: {
                 white: '#FFFFFF',
-                offwhite: '#F9F7F5',
-                rose: '#EBD8D0',
-                nude: '#D8C3A5',
-                gold: '#C5A059',
-                goldSoft: '#D4AF37',
+                offwhite: 'var(--brand-offwhite)',
+                rose: 'var(--brand-rose)',
+                nude: 'var(--brand-nude)',
+                gold: 'var(--brand-gold)',
+                goldSoft: 'var(--brand-gold-soft)',
               }
             },
             fontFamily: {
@@ -50,12 +50,33 @@
       }
     </script>
     <style>
+      :root {
+        --brand-offwhite: #F0F8FF;
+        --brand-rose: #92A8D1;
+        --brand-nude: #B0E0E6;
+        --brand-gold: #89CFF0;
+        --brand-gold-soft: #AEC6CF;
+      }
+      .theme-feminino {
+        --brand-offwhite: #FFF5F7;
+        --brand-rose: #F472B6;
+        --brand-nude: #FBCFE8;
+        --brand-gold: #EC4899;
+        --brand-gold-soft: #F9A8D4;
+      }
+      .theme-masculino {
+        --brand-offwhite: #F0F8FF;
+        --brand-rose: #92A8D1;
+        --brand-nude: #B0E0E6;
+        --brand-gold: #89CFF0;
+        --brand-gold-soft: #AEC6CF;
+      }
       body {
         background-color: #FFFFFF;
         -webkit-font-smoothing: antialiased;
       }
       ::selection {
-        background-color: #EBD8D0;
+        background-color: var(--brand-rose);
         color: #1c1917;
       }
       /* Custom Scrollbar */
@@ -63,14 +84,14 @@
         width: 8px;
       }
       ::-webkit-scrollbar-track {
-        background: #F9F7F5;
+        background: var(--brand-offwhite);
       }
       ::-webkit-scrollbar-thumb {
-        background: #C5A059;
+        background: var(--brand-gold);
         border-radius: 4px;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #D4AF37;
+        background: var(--brand-gold-soft);
       }
     </style>
   <script type="importmap">
@@ -84,8 +105,10 @@
   }
 }
 </script>
+<link rel="stylesheet" href="/index.css">
 </head>
   <body>
     <div id="root"></div>
-  </body>
+  <script type="module" src="/index.tsx"></script>
+</body>
 </html>
