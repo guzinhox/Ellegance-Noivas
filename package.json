@@ -6,16 +6,20 @@
   "scripts": {
     "dev": "tsx server.ts",
     "build": "vite build",
+    "lint": "tsc --noEmit",
     "preview": "vite preview"
   },
   "dependencies": {
     "@google/genai": "^1.41.0",
+    "autoprefixer": "^10.4.20",
     "cors": "^2.8.6",
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
     "lucide-react": "^0.563.0",
+    "postcss": "^8.4.49",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
+    "tailwindcss": "^3.4.17",
     "telegraf": "^4.16.3"
   },
   "devDependencies": {

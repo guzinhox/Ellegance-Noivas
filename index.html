@@ -13,87 +13,10 @@
     <meta property="og:description" content="Realizando sonhos com elegância no litoral de SP." />
     <meta property="og:image" content="https://images.unsplash.com/photo-1594462285124-d33d9efec3d2?q=80&w=1200" />
     
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              brand: {
-                white: '#FFFFFF',
-                offwhite: 'var(--brand-offwhite)',
-                rose: 'var(--brand-rose)',
-                nude: 'var(--brand-nude)',
-                gold: 'var(--brand-gold)',
-                goldSoft: 'var(--brand-gold-soft)',
-              }
-            },
-            fontFamily: {
-              serif: ['Playfair Display', 'serif'],
-              sans: ['Montserrat', 'sans-serif'],
-            },
-            animation: {
-              'fade-in': 'fadeIn 1s ease-out forwards',
-            },
-            keyframes: {
-              fadeIn: {
-                '0%': { opacity: '0', transform: 'translateY(10px)' },
-                '100%': { opacity: '1', transform: 'translateY(0)' },
-              }
-            }
-          }
-        }
-      }
-    </script>
-    <style>
-      :root {
-        --brand-offwhite: #F0F8FF;
-        --brand-rose: #92A8D1;
-        --brand-nude: #B0E0E6;
-        --brand-gold: #89CFF0;
-        --brand-gold-soft: #AEC6CF;
-      }
-      .theme-feminino {
-        --brand-offwhite: #FFF5F7;
-        --brand-rose: #F472B6;
-        --brand-nude: #FBCFE8;
-        --brand-gold: #EC4899;
-        --brand-gold-soft: #F9A8D4;
-      }
-      .theme-masculino {
-        --brand-offwhite: #F0F8FF;
-        --brand-rose: #92A8D1;
-        --brand-nude: #B0E0E6;
-        --brand-gold: #89CFF0;
-        --brand-gold-soft: #AEC6CF;
-      }
-      body {
-        background-color: #FFFFFF;
-        -webkit-font-smoothing: antialiased;
-      }
-      ::selection {
-        background-color: var(--brand-rose);
-        color: #1c1917;
-      }
-      /* Custom Scrollbar */
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: var(--brand-offwhite);
-      }
-      ::-webkit-scrollbar-thumb {
-        background: var(--brand-gold);
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: var(--brand-gold-soft);
-      }
-    </style>
   <script type="importmap">
 {
   "imports": {
@@ -105,7 +28,6 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
   <body>
     <div id="root"></div>
